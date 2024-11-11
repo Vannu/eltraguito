@@ -16,4 +16,4 @@ Este proyecto es la pre-entrega de un proyecto final donde se ha demostrado el u
 
 ## Enlace al Proyecto
 Puedes ver el proyecto desplegado en GitHub Pages aquí:  
-[Ver Proyecto](https://tu_usuario.github.io/tu_repositorio/)
+[Ver Proyecto](https://vannu.github.io/eltraguito/)
