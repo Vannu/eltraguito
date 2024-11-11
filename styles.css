@@ -1,0 +1,522 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Google Fonts */
+}
+
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+h1, h2 {
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D32F2F; 
+}
+
+/*  Header */
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #D32F2F; 
+}
+
+/* Sección productos (index.html) */
+#productos {
+    background-color: #fff;
+    color: #000;
+    padding: 40px;
+    text-align: center;
+}
+
+#productos .producto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#productos .producto-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    width: calc(25% - 40px);
+    transition: transform 0.3s ease;
+
+}
+
+#productos .producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+   text-decoration: none;
+}
+
+.producto-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 5px 5px;
+}
+
+.producto-card .item-title {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.producto-card .item-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.producto-card .item-title a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Sección de Quiénes Somos (index.html) */
+#quienes-somos {
+    background-image: url('images/somos-eltraguito.webp');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: cover;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.quienes-somos-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    border-radius: 5px;
+}
+
+/*  envíos */
+.envios-banner {
+    background-color: #333;
+    color: #D32F2F;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.envios-banner p {
+    margin: 0;
+}
+
+
+/* Sección de contacto */
+
+#contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 50px; 
+ 
+    color: #333; 
+    font-family: 'Arial', sans-serif;
+    gap: 40px;
+    margin-top: 60px; 
+}
+
+
+#contacto h2 {
+    font-size: 2rem; 
+    font-weight: bold;
+    margin-bottom: 20px; 
+    color: #212529;; 
+}
+
+/* Estilo para la columna (izquierda) */
+#contacto .info {
+    flex: 1;
+    max-width: 45%; 
+}
+
+#contacto .info p {
+    font-size: 1.2rem; 
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #666; 
+}
+
+#contacto .info a {
+    color: #C21E1D; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contacto .info a:hover {
+    text-decoration: underline;
+}
+
+#contacto .info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contacto .info ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Estilo para la columna del formulario (derecha) */
+#contacto .formulario {
+    flex: 1;
+    max-width: 45%;
+}
+
+/* Estilo para el formulario de contacto */
+#contacto .formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contacto .formulario label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#contacto .formulario input, 
+#contacto .formulario textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+#contacto .formulario input:focus, 
+#contacto .formulario textarea:focus {
+    border-color: #C21E1D; 
+}
+
+#contacto .formulario textarea {
+    height: 180px;
+    resize: none;
+}
+
+#contacto .formulario button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contacto .formulario button:hover {
+    background-color: #000; 
+}
+
+/* MEDIA */
+@media (max-width: 768px) {
+    #contacto {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px; 
+    }
+
+    #contacto .info,
+    #contacto .formulario {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #contacto .info p,
+    #contacto .info ul li {
+        font-size: 1rem; 
+    }
+}
+
+
+
+/* testimonios */
+#testimonios {
+    background-color: #f9f9f9; 
+    padding: 60px 0;
+    text-align: center;
+    color: #333; 
+}
+
+
+#testimonios h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 40px; 
+}
+
+
+.testimonios-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+}
+
+
+.testimonio {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+}
+
+
+.texto-testimonio {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666; 
+    margin-bottom: 20px;
+}
+
+
+.nombre-cliente {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+.profesion-cliente {
+    font-style: italic;
+    color: #777;
+}
+
+/* MEDIA*/
+@media (max-width: 768px) {
+    
+    .testimonios-contenedor {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .testimonio {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    
+    .texto-testimonio {
+        font-size: 1rem;
+    }
+
+    .nombre-cliente {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+
+.social-media {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.social-media a:hover {
+    color: #D32F2F;
+}
+
+
+
+
+/* Tienda  */
+
+
+.producto-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 15px;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    
+}
+
+.producto-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto-info {
+    margin-top: 15px;
+}
+
+.precio {
+    font-size: 1.5em;
+    color: #D32F2F;
+}
+
+
+.btn-cart {
+    background-color: #333; 
+    color: white; 
+    border: none; 
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+.btn-cart:hover {
+    background-color: #000000; 
+    
+}
+
+
+/* barra lateral */
+
+.container {
+    margin-top: 20px;
+}
+
+.text-center {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.list-group {
+    margin-top: 1rem;
+}
+
+.list-group-item {
+    font-size: 1.1rem;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #333;  
+    font-weight: bold;
+}
+
+.list-group-item:hover {
+    background-color: #000;
+    text-decoration: underline;
+}
+.list-group-item:hover a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Media */
+@media (max-width: 768px) {
+    .producto-card {
+        width: calc(50% - 40px); 
+    }
+
+    #contacto form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #contacto label {
+        font-size: 1.1em;
+    }
+
+    #contacto input, #contacto textarea {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .producto-card {
+        width: calc(100% - 40px); /
+    }
+}
+
+@media (max-width: 576px) {
+    .col-lg-4, .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
