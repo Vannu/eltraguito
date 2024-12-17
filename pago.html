@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - El Traguito</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">El Traguito</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Formulario de Pago</h2>
+
+            <!-- Formulario de pago -->
+            <form id="form-pago" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tarjeta">Número de Tarjeta</label>
+                    <input type="text" class="form-control" id="tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha-expiracion">Fecha de Expiración (MM/AA)</label>
+                    <input type="text" class="form-control" id="fecha-expiracion" placeholder="MM/AA" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">Código de Seguridad (CVV)</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+                </div>
+
+                <!-- Mensaje de confirmación de pago -->
+                <div id="mensaje-confirmacion-pago" class="alert alert-success alert-dismissible mt-3" role="alert" style="display: none;">
+                    ¡Pago realizado con éxito! Gracias por tu compra.
+                </div>
+
+                
+                <button type="submit" class="btn btn-success btn-block">Realizar Pago</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="enlace-a-facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="enlace-a-instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="enlace-a-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 El Traguito. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

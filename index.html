@@ -16,99 +16,136 @@
         <ul>
             <li><a href="#quienes-somos">Quiénes Somos</a></li>
             <li><a href="tienda.html">Tienda</a></li>
-            <li><a href="#productos">Productos</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <!-- Sección de Productos -->
-    <section id="productos">
-        <h2>BEBIDAS</h2>
-        <div class="producto-container">
-            <div class="producto-card">
-                <a href="tienda.html">
-                    <div class="item-title">APERITIVOS</div>
-                    <img src="images/aperitivos.jpg" class="producto-imagen" alt="APERITIVOS">
-                </a>
-            </div>
-            <div class="producto-card">
-                <a href="tienda.html">
-                    <div class="item-title">VINOS</div>
-                    <img src="images/vinos.jpg" class="producto-imagen" alt="VINOS">
-                </a>
-            </div>
-            <div class="producto-card">
-                <a href="tienda.html">
-                    <div class="item-title">CERVEZAS</div>
-                    <img src="images/cervezas.jpg" class="producto-imagen" alt="CERVEZAS">
-                </a>
-            </div>
-            <div class="producto-card">
-                <a href="tienda.html">
-                    <div class="item-title">ESPUMANTE</div>
-                    <img src="images/espumosos.jpg" class="producto-imagen" alt="ESPUMANTE">
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Sección Quiénes Somos -->
-    <section id="quienes-somos">
-        <h2 class="text-center">Quiénes Somos</h2>
+    <section id="oferta" class="oferta mt-5">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="quienes-somos-content">
-                        <p>DISTRIBUIDORA, VENTA Y DISTRIBUCIÓN DE BEBIDAS ALCOHÓLICAS PARA VINOTECAS, BARES, RESTAURANTES, AUTOSERVICIOS, BOLICHES Y EMPRESAS.</p>
-                        <p>NOS DEDICAMOS A LA VENTA DE VINOS, CHAMPANES, ESPUMANTES, DESTILADOS Y WHISKIES.</p>
-                    </div>
+            <div class="row">
+                <!-- Columna para la imagen -->
+                <div class="col-md-6 col-12">
+                    <img src="images/oferta.jpg" alt="Oferta de Cervezas" class="img-fluid">
+                </div>
+    
+                <!-- Columna para la información de la oferta -->
+                <div class="col-md-6 col-12 d-flex flex-column justify-content-center">
+                    <h2>¡OFERTA!</h2>
+                    <h3>21% de descuento en cervezas + 50% DTO. 2ª unidad</h3>
+                    <p>Todo el mes de diciembre. ¡No te la pierdas!</p>
                 </div>
             </div>
         </div>
-
-       
-        <div class="envios-banner">
-            <p>ENVÍOS A TODO EL PAÍS</p>
-        </div>
-    </section>
-
-
-    <!-- Sección de Contacto -->
-
-    <section id="contacto">
-        <div class="info">
-            <h2>Contáctanos</h2>
-            <p>Si tienes preguntas o inquietudes, no dudes en comunicarte con nosotros. Estamos aquí para ayudarte.</p>
-            <p><strong>Teléfono:</strong> <a href="tel:+1234567890">+54 (11) 2345-6789</a></p>
-            <p><strong>Correo Electrónico:</strong> <a href="mailto:contacto@eltraguito.com">contacto@eltraguito.com</a></p>
-            <ul>
-                <li><strong>Horarios de Atención:</strong></li>
-                <li>Lunes - Viernes: 9:00 AM - 6:00 PM</li>
-                <li>Sábado: 10:00 AM - 2:00 PM</li>
-                <li>Domingo: Cerrado</li>
-            </ul>
-        </div>
-    
-        <div class="formulario">
-            <form action="https://formspree.io/f/movqjybl" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-    
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-    
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
     </section>
     
+    
+<!-- Sección de Productos -->
+<section id="productos">
+    <h2>BEBIDAS</h2>
+    <div class="producto-container">
+        <div class="producto-card">
+            <a href="tienda.html">
+                <div class="item-title">APERITIVOS</div>
+                <img src="images/aperitivos.jpg" class="producto-imagen" alt="APERITIVOS">
+            </a>
+        </div>
+        <div class="producto-card">
+            <a href="tienda.html">
+                <div class="item-title">VINOS</div>
+                <img src="images/vinos.jpg" class="producto-imagen" alt="VINOS">
+            </a>
+        </div>
+        <div class="producto-card">
+            <a href="tienda.html">
+                <div class="item-title">CERVEZAS</div>
+                <img src="images/cervezas.jpg" class="producto-imagen" alt="CERVEZAS">
+            </a>
+        </div>
+        <div class="producto-card">
+            <a href="tienda.html">
+                <div class="item-title">ESPUMANTE</div>
+                <img src="images/espumosos.jpg" class="producto-imagen" alt="ESPUMANTE">
+            </a>
+        </div>
+    </div>
+</section>
 
-    <section id="testimonios" class="testimonios">
+   
+    
+<section id="quienes-somos">
+    <h2 class="text-center">Quiénes Somos</h2>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="quienes-somos-content">
+                    <p>DISTRIBUIDORA, VENTA Y DISTRIBUCIÓN DE BEBIDAS ALCOHÓLICAS PARA VINOTECAS, BARES, RESTAURANTES, AUTOSERVICIOS, BOLICHES Y EMPRESAS.</p>
+                    <p>NOS DEDICAMOS A LA VENTA DE VINOS, CHAMPANES, ESPUMANTES, DESTILADOS Y WHISKIES.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="envios-banner">
+        <p>ENVÍOS A TODO EL PAÍS</p>
+    </div>
+</section>
+
+
+<!-- Sección de Contacto -->
+<section id="contacto">
+    <div class="container">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+
+        <div class="row">
+            <!-- Información de contacto -->
+            <div class="col-md-6 mb-4">
+                <div class="info">
+                    <p>Si tienes preguntas o inquietudes, no dudes en comunicarte con nosotros. Estamos aquí para ayudarte.</p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+1234567890">+54 (11) 2345-6789</a></p>
+                    <p><strong>Correo Electrónico:</strong> <a href="mailto:contacto@eltraguito.com">contacto@eltraguito.com</a></p>
+                    <ul>
+                        <li><strong>Horarios de Atención:</strong></li>
+                        <li>Lunes - Viernes: 9:00 AM - 6:00 PM</li>
+                        <li>Sábado: 10:00 AM - 2:00 PM</li>
+                        <li>Domingo: Cerrado</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Formulario de contacto -->
+            <div class="col-md-6 mb-4">
+                <div class="formulario">
+                    <form action="https://formspree.io/f/movqjybl" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+     <!-- Sección de Testimonios -->
+     <section id="testimonios" class="testimonios">
         <h2>Lo que dicen nuestros clientes</h2>
         <div class="testimonios-contenedor">
             <!-- Testimonio 1 -->
@@ -117,7 +154,7 @@
                 <p class="nombre-cliente">Juan Pérez</p>
                 <p class="profesion-cliente">Cliente frecuente</p>
             </div>
-    
+
             <!-- Testimonio 2 -->
             <div class="testimonio">
                 <p class="texto-testimonio">"Una experiencia fantástica. Los productos son de muy buena calidad y siempre me siento bien atendido. ¡Recomendado al 100%!"</p>

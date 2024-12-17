@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda - El Traguito</title>
+    <title>Carrito - El Traguito</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -25,10 +25,10 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                        <a class="nav-link" href="tienda.html">Tienda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="carrito.html">Ver Carrito</a>
+                        <a class="nav-link" href="index.html#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -36,39 +36,20 @@
     </header>
 
     <main>
-
         <div class="container mt-4">
-            <div class="row">
-                <!-- Filtro de categorías -->
-                <div class="col-lg-3 col-md-4 mb-4">
-                    <h2>Categorías de Bebidas</h2>
-                    <ul class="list-group">
-                        <button onclick="verTodo()">Ver todo</button>
-                        <li class="list-group-item"><a href="javascript:void(0)" onclick="filtrarPorCategoria('Vinos')">Vinos</a></li>
-                        <li class="list-group-item"><a href="javascript:void(0)" onclick="filtrarPorCategoria('Cervezas')">Cervezas</a></li>
-                        <li class="list-group-item"><a href="javascript:void(0)" onclick="filtrarPorCategoria('Espumantes')">Espumantes</a></li>
-                        <li class="list-group-item"><a href="javascript:void(0)" onclick="filtrarPorCategoria('Whisky')">Whisky</a></li>
-                        <li class="list-group-item"><a href="javascript:void(0)" onclick="filtrarPorCategoria('Espirituosas')">Espirituosas</a></li>
-                        <li class="list-group-item"><a href="javascript:void(0)" onclick="filtrarPorCategoria('Aperitivos')">Aperitivos</a></li>
-                    </ul>
-                </div>
-
-                <!-- Sección de Productos -->
-                <div class="col-lg-9 col-md-8">
-                    <h2 class="text-center">Nuestra Selección</h2>
-
-                    <!-- Mensaje de confirmación-->
-                    <div id="mensaje-confirmacion-carrito" class="alert alert-success alert-dismissible mt-3" role="alert" style="display: none;">
-                        Producto agregado al carrito.
-                    </div>
-
-                    <div class="row" id="productos-container">
-                        <!-- Cargar productos -->
-                    </div>
-                </div>
+            <h2 class="text-center">Tu Carrito de Compras</h2>
+            <div id="carrito-contenedor">
+                <!-- Los productos del carrito se cargarán dinámicamente aquí -->
+            </div>
+            <div class="total-carrito text-right">
+                <h4>Total: <span id="total-carrito">$0.00</span></h4>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-danger" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                <a href="pago.html" button class="btn btn-success ml-2">Pagar</button></a>
+                <a href="tienda.html" class="btn btn-primary ml-2">Seguir Comprando</a>
             </div>
         </div>
-
     </main>
 
     <footer>
@@ -82,7 +63,9 @@
 
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

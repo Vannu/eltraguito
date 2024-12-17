@@ -1,0 +1,76 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Weinert",
+            "descripcion": "Descripción breve del vino tinto.",
+            "precio": "$20.00",
+            "imagen": "images/vino-tinto.jpg",
+            "categoria": "Vinos"
+        },
+        {
+            "id": 2,
+            "nombre": "Quilmes",
+            "descripcion": "Descripción breve de la cerveza artesanal.",
+            "precio": "$15.00",
+            "imagen": "images/cerveza-artesanal.jpg",
+            "categoria": "Cervezas"
+        },
+        {
+            "id": 3,
+            "nombre": "Ruinart",
+            "descripcion": "Descripción breve del espumante.",
+            "precio": "$25.00",
+            "imagen": "images/espumante.jpg",
+            "categoria": "Espumantes"
+        },
+        {
+            "id": 4,
+            "nombre": "Black Label",
+            "descripcion": "Descripción breve del whisky.",
+            "precio": "$30.00",
+            "imagen": "images/whisky.jpeg",
+            "categoria": "Whisky"
+        },
+        {
+            "id": 5,
+            "nombre": "Ron Bacardí",
+            "descripcion": "Descripción breve del ron.",
+            "precio": "$22.00",
+            "imagen": "images/ron.jpeg",
+            "categoria": "Espirituosas"
+        },
+        {
+            "id": 6,
+            "nombre": "Vodka Smirnoff",
+            "descripcion": "Descripción breve de la vodka.",
+            "precio": "$18.00",
+            "imagen": "images/vodka.jpg",
+            "categoria": "Espirituosas"
+        },
+        {
+            "id": 7,
+            "nombre": "Tequila Don Julio",
+            "descripcion": "Descripción breve del tequila.",
+            "precio": "$28.00",
+            "imagen": "images/tequila.jpg",
+            "categoria": "Espirituosas"
+        },
+        {
+            "id": 8,
+            "nombre": "Gin Malfy",
+            "descripcion": "Descripción breve del gin.",
+            "precio": "$26.00",
+            "imagen": "images/gin.jpg",
+            "categoria": "Espirituosas"
+        },
+        {
+            "id": 9,
+            "nombre": "Campari",
+            "descripcion": "Descripción breve del aperitivo.",
+            "precio": "$19.00",
+            "imagen": "images/campari.jpg",
+            "categoria": "Aperitivos"
+        }
+    ]
+}

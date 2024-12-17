@@ -1,11 +1,9 @@
-
-* {
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Google Fonts */
+    font-family: 'Roboto', sans-serif;
 }
-
 
 body {
     background-color: #000;
@@ -13,7 +11,6 @@ body {
     font-size: 18px;
     line-height: 1.6;
 }
-
 
 h1, h2 {
     color: #fff;
@@ -23,7 +20,6 @@ h2 {
     font-size: 2.5em;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -32,7 +28,10 @@ a:hover {
     color: #D32F2F; 
 }
 
-/*  Header */
+
+/* ====================
+   Header y Navegación
+   ==================== */
 header {
     background-color: #000;
     padding: 20px;
@@ -45,7 +44,6 @@ header h1 {
     color: #fff;
 }
 
-/* Navegación */
 nav ul {
     display: flex;
     justify-content: center;
@@ -66,63 +64,53 @@ nav ul li a:hover {
     color: #D32F2F; 
 }
 
-/* Sección productos (index.html) */
+
+/* =====================
+   Sección de Productos
+   ===================== */
 #productos {
-    background-color: #fff;
-    color: #000;
-    padding: 40px;
     text-align: center;
+    padding: 40px 0;
 }
 
-#productos .producto-container {
-    display: flex;
-    flex-wrap: wrap;
+.producto-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Crea un grid responsivo */
+    gap: 20px;
     justify-content: center;
 }
 
-#productos .producto-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px;
-    background-color: #f9f9f9;
-    width: calc(25% - 40px);
+.producto-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     transition: transform 0.3s ease;
-
 }
 
-#productos .producto-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-   text-decoration: none;
-}
-
-.producto-imagen {
-    width: 100%;
-    height: auto;
-    border-radius: 0 0 5px 5px;
+.producto-card:hover {
+    transform: scale(1.05);
 }
 
 .producto-card .item-title {
-    background-color: #000;
-    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
     padding: 10px;
-    text-align: center;
-    font-size: 1.5em;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
 }
 
-.producto-card .item-title a {
-    color: #fff;
-    text-decoration: none;
+.producto-card img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.producto-card .item-title a:hover {
-    text-decoration: none;
-    color: #fff;
-}
 
-/* Sección de Quiénes Somos (index.html) */
+/* ==============
+   Quiénes Somos
+   ============== */
 #quienes-somos {
     background-image: url('images/somos-eltraguito.webp');
     background-repeat: no-repeat;
@@ -138,7 +126,10 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/*  envíos */
+
+/* =================
+   Banner de Envíos
+   ================= */
 .envios-banner {
     background-color: #333;
     color: #D32F2F;
@@ -155,43 +146,41 @@ nav ul li a:hover {
 }
 
 
-/* Sección de contacto */
-
+/* =========
+   Contacto
+   ========= */
 #contacto {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 60px 50px; 
- 
-    color: #333; 
+    color: #333;
     font-family: 'Arial', sans-serif;
     gap: 40px;
     margin-top: 60px; 
 }
 
-
 #contacto h2 {
-    font-size: 2rem; 
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 20px; 
-    color: #212529;; 
+    margin-bottom: 20px;
+    color: #212529;
 }
 
-/* Estilo para la columna (izquierda) */
 #contacto .info {
     flex: 1;
-    max-width: 45%; 
+    max-width: 45%;
 }
 
 #contacto .info p {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 20px;
-    color: #666; 
+    color: #666;
 }
 
 #contacto .info a {
-    color: #C21E1D; 
+    color: #C21E1D;
     text-decoration: none;
     font-weight: bold;
 }
@@ -211,13 +200,11 @@ nav ul li a:hover {
     margin: 10px 0;
 }
 
-/* Estilo para la columna del formulario (derecha) */
 #contacto .formulario {
     flex: 1;
     max-width: 45%;
 }
 
-/* Estilo para el formulario de contacto */
 #contacto .formulario form {
     display: flex;
     flex-direction: column;
@@ -268,44 +255,23 @@ nav ul li a:hover {
     background-color: #000; 
 }
 
-/* MEDIA */
-@media (max-width: 768px) {
-    #contacto {
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 20px; 
-    }
 
-    #contacto .info,
-    #contacto .formulario {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    #contacto .info p,
-    #contacto .info ul li {
-        font-size: 1rem; 
-    }
-}
-
-
-
-/* testimonios */
+/* ===========
+   Testimonios
+   ============ */
 #testimonios {
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
     padding: 60px 0;
     text-align: center;
-    color: #333; 
+    color: #333;
 }
-
 
 #testimonios h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #333; 
-    margin-bottom: 40px; 
+    color: #333;
+    margin-bottom: 40px;
 }
-
 
 .testimonios-contenedor {
     display: grid;
@@ -313,7 +279,6 @@ nav ul li a:hover {
     gap: 30px;
     justify-items: center;
 }
-
 
 .testimonio {
     background-color: white;
@@ -325,14 +290,12 @@ nav ul li a:hover {
     text-align: left;
 }
 
-
 .texto-testimonio {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #666; 
+    color: #666;
     margin-bottom: 20px;
 }
-
 
 .nombre-cliente {
     font-weight: bold;
@@ -340,37 +303,15 @@ nav ul li a:hover {
     color: #333;
 }
 
-
 .profesion-cliente {
     font-style: italic;
     color: #777;
 }
 
-/* MEDIA*/
-@media (max-width: 768px) {
-    
-    .testimonios-contenedor {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    }
 
-    .testimonio {
-        max-width: 100%;
-        padding: 20px;
-    }
-
-    
-    .texto-testimonio {
-        font-size: 1rem;
-    }
-
-    .nombre-cliente {
-        font-size: 1.1rem;
-    }
-}
-
-
-
-/* Footer */
+/* =======
+   Footer
+   ======= */
 footer {
     background-color: #000;
     color: #fff;
@@ -378,7 +319,6 @@ footer {
     padding: 20px;
     font-size: 0.9em;
 }
-
 
 .social-media {
     text-align: center;
@@ -396,11 +336,9 @@ footer {
 }
 
 
-
-
-/* Tienda  */
-
-
+/* =======
+   Tienda
+   =======*/
 .producto-card {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -412,7 +350,6 @@ footer {
 
 .producto-card:hover {
     transform: translateY(-5px);
-    
 }
 
 .producto-imagen {
@@ -430,24 +367,22 @@ footer {
     color: #D32F2F;
 }
 
-
 .btn-cart {
-    background-color: #333; 
-    color: white; 
-    border: none; 
+    background-color: #333;
+    color: white;
+    border: none;
     padding: 10px;
     border-radius: 15px;
 }
 
-
 .btn-cart:hover {
-    background-color: #000000; 
-    
+    background-color: #000000;
 }
 
 
-/* barra lateral */
-
+/* ==============
+   Barra Lateral
+   ============== */
 .container {
     margin-top: 20px;
 }
@@ -473,7 +408,7 @@ footer {
 
 .list-group-item a {
     text-decoration: none;
-    color: #333;  
+    color: #333;
     font-weight: bold;
 }
 
@@ -481,36 +416,36 @@ footer {
     background-color: #000;
     text-decoration: underline;
 }
-.list-group-item:hover a{
+
+.list-group-item:hover a {
     color: #ffffff;
     text-decoration: none;
 }
 
 
-/* Media */
+/* =============
+   Media Queries 
+   ============= */
 @media (max-width: 768px) {
-    .producto-card {
-        width: calc(50% - 40px); 
+    #contacto {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
     }
 
-    #contacto form {
-        width: 100%;
-        padding: 15px;
+    #contacto .info, #contacto .formulario {
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 
-    #contacto label {
-        font-size: 1.1em;
-    }
-
-    #contacto input, #contacto textarea {
-        width: 100%;
-        padding: 10px;
+    #contacto .info p, #contacto .info ul li {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .producto-card {
-        width: calc(100% - 40px); /
+        width: calc(100% - 40px);
     }
 }
 
