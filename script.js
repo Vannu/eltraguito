@@ -50,19 +50,21 @@ function cargarProductos(productos) {
         productoDiv.setAttribute('data-categoria', producto.categoria); //  categoría para el filtro
 
         productoDiv.innerHTML = `
-            <div class="card">
-                <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
-                <div class="card-body">
-                    <h5 class="card-title">${producto.nombre}</h5>
-                    <p class="card-text">Precio: $${producto.precio}</p>
-                    <button class="btn btn-primary" onclick="agregarAlCarrito({
-                        nombre: '${producto.nombre}', 
-                        precio: '${producto.precio}', 
-                        imagen: '${producto.imagen}'
-                    })">Agregar al Carrito</button>
-                </div>
-            </div>
-        `;
+    <div class="card">
+        <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+        <div class="card-body">
+            <h5 class="card-title">${producto.nombre}</h5>
+            <p class="card-text">${producto.descripcion}</p> <!-- Aquí se incluye la descripción -->
+            <p class="card-text">Precio: ${producto.precio}</p> <!-- Corrige la duplicación del signo $ si es necesario -->
+            <button class="btn btn-primary" onclick="agregarAlCarrito({
+                nombre: '${producto.nombre}', 
+                precio: '${producto.precio}', 
+                imagen: '${producto.imagen}'
+            })">Agregar al Carrito</button>
+        </div>
+    </div>
+`;
+
 
         // Agrega producto
         productosContainer.appendChild(productoDiv);
@@ -79,8 +81,9 @@ function filtrarPorCategoria(categoria) {
 
 //  ver todos los productos de la categoria
 function verTodo() {
-    cargarProductos(productosCargados); 
+    cargarProductos(productosCargados);
 }
+
 
 // =========================
 // Funciones para el Carrito
