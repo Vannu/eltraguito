@@ -3,72 +3,72 @@
         {
             "id": 1,
             "nombre": "Weinert",
-            "descripcion": "Descripción breve del vino tinto.",
-            "precio": "$20.00",
+            "descripcion": "Vino Carrascal Corte Clásico Weinert",
+            "precio": "7.870",
             "imagen": "images/vino-tinto.jpg",
             "categoria": "Vinos"
         },
         {
             "id": 2,
-            "nombre": "Quilmes",
-            "descripcion": "Descripción breve de la cerveza artesanal.",
-            "precio": "$15.00",
+            "nombre": "Quilmes clasica",
+            "descripcion": "Cerveza Quilmes Clásica Lagerrubia 340 mL",
+            "precio": "2.500",
             "imagen": "images/cerveza-artesanal.jpg",
             "categoria": "Cervezas"
         },
         {
             "id": 3,
             "nombre": "Ruinart",
-            "descripcion": "Descripción breve del espumante.",
-            "precio": "$25.00",
+            "descripcion": "Champagne Ruinart Rose Francia",
+            "precio": "275.000",
             "imagen": "images/espumante.jpg",
             "categoria": "Espumantes"
         },
         {
             "id": 4,
             "nombre": "Black Label",
-            "descripcion": "Descripción breve del whisky.",
-            "precio": "$30.00",
+            "descripcion": "Whisky Johnnie Walker Black Label 750ml",
+            "precio": "62.000",
             "imagen": "images/whisky.jpeg",
             "categoria": "Whisky"
         },
         {
             "id": 5,
             "nombre": "Ron Bacardí",
-            "descripcion": "Descripción breve del ron.",
-            "precio": "$22.00",
+            "descripcion": "Ron Bacardí carta oro 980ml",
+            "precio": "18.100",
             "imagen": "images/ron.jpeg",
             "categoria": "Espirituosas"
         },
         {
             "id": 6,
             "nombre": "Vodka Smirnoff",
-            "descripcion": "Descripción breve de la vodka.",
-            "precio": "$18.00",
+            "descripcion": "Vodka Smirnoff 21 700ml",
+            "precio": "8.532",
             "imagen": "images/vodka.jpg",
             "categoria": "Espirituosas"
         },
         {
             "id": 7,
             "nombre": "Tequila Don Julio",
-            "descripcion": "Descripción breve del tequila.",
-            "precio": "$28.00",
+            "descripcion": "Tequila Don Julio Blanco 700ml.",
+            "precio": "81.772",
             "imagen": "images/tequila.jpg",
             "categoria": "Espirituosas"
         },
         {
             "id": 8,
             "nombre": "Gin Malfy",
-            "descripcion": "Descripción breve del gin.",
-            "precio": "$26.00",
+            "descripcion": "Malfy gin 47° botella 750ml",
+            "precio": "40.000",
             "imagen": "images/gin.jpg",
             "categoria": "Espirituosas"
         },
         {
             "id": 9,
             "nombre": "Campari",
-            "descripcion": "Descripción breve del aperitivo.",
-            "precio": "$19.00",
+            "descripcion": "Campari Aperitivo 750 Ml Botella",
+            "precio": "10.000",
             "imagen": "images/campari.jpg",
             "categoria": "Aperitivos"
         }
